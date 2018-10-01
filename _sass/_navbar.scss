@@ -1,0 +1,19 @@
+
+#MobileNavMenu {
+  display: none;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &.is-active {
+    display: flex;
+  }
+
+}
+
+@media (min-width: 1088px) {
+  #MobileNavMenu, #MobileNavMenu.is-active {
+    display: none;
+  }
+}
