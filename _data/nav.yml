@@ -1,0 +1,15 @@
+widenav:
+
+- title: Main
+  url: /
+  
+- title: Pod Distribution
+  url: /distribution-map/
+  
+mobilenav:
+
+- title: Main
+  url: /
+
+- title: Pod Distribution
+  url: /distribution-map/
