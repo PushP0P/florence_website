@@ -11,6 +11,11 @@
 
 }
 
+.navbar-item.is-current {
+  background-color: #fafafa;
+  color: $blue;
+}
+
 @media (min-width: 1088px) {
   .navbar-item img {
     max-height: 3.75rem;
