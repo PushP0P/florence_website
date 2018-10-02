@@ -1,8 +1,7 @@
 <nav class="navbar is-spaced full-screen" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="{{site.url}}">
-            <img src="{{site.baseurl}}/assets/images/brigade_sm.png" alt="Code for America Hurricane Florence Response"
-                 height="100%">
+        <a id="NavbarLogo" class="navbar-item logo" href="{{site.url}}">
+            <img src="{{site.baseurl}}/assets/images/brigade.jpeg" alt="Code for America Hurricane Florence Response">
         </a>
         <a id="MenuButton" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="menuClickHandler();">
             <span aria-hidden="true"></span>
@@ -26,7 +25,6 @@
     </div>
 </nav>
 <script>
-
     function menuClickHandler() {
         const menuButtonRef = document.getElementById('MenuButton');
         const mobileNavMenuRef = document.getElementById('MobileNavMenu');

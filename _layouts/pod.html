@@ -4,7 +4,7 @@
     <head>
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
-        {% include head.html %}
+      {% include head.html %}
     </head>
     <body>
         {% include navbar.html %}
@@ -19,7 +19,25 @@
                     <h3 class="title is-3">
                         See Something Missing?
                     </h3>
-                    <p>To add more resources to these lists, please submit them here.</p>
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125718262-1"></script>
+                    <script>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'UA-125718262-1');
+                    </script>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+                    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+                    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+                    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url | prepend: site.url }}">
+                    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.github.url | prepend: site.url }}">
+                    {% seo %}         <p>To add more resources to these lists, please submit them here.</p>
                     <p><a class="button is-light" href="https://github.com/hurricane-response/florence_website">GitHub repo</a></p>
                 </div>
             </div>
